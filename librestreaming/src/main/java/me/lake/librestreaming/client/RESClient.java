@@ -236,7 +236,7 @@ public class RESClient {
      * @return speed in B/s
      */
     public int getAVSpeed() {
-        return resCore.getTotalSpeed();
+        return resCore==null?0:resCore.getTotalSpeed();
     }
 
     /**

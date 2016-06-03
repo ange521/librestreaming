@@ -154,7 +154,6 @@ public class RESCore {
                 resCoreParameters.previewVideoWidth,
                 resCoreParameters.previewVideoHeight,
                 directionFlag);
-        Log.e("aa","ttime="+(System.currentTimeMillis()-a));
     }
 
     /**
@@ -356,7 +355,7 @@ public class RESCore {
     }
 
     public int getTotalSpeed() {
-        return rtmpSender.getTotalSpeed();
+        return rtmpSender==null?0:rtmpSender.getTotalSpeed();
     }
 
     public void stop() {
